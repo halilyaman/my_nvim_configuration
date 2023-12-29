@@ -21,6 +21,13 @@ return require('packer').startup(function(use)
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use('mbbill/undotree')
 	use {
+		'akinsho/flutter-tools.nvim',
+		requires = {
+			'nvim-lua/plenary.nvim',
+			'stevearc/dressing.nvim', -- optional for vim.ui.select
+		},
+	}
+    use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v3.x',
 		requires = {
@@ -35,13 +42,6 @@ return require('packer').startup(function(use)
 			{'hrsh7th/cmp-nvim-lsp'},
 			{'L3MON4D3/LuaSnip'},
 		}
-	}
-	use {
-		'akinsho/flutter-tools.nvim',
-		requires = {
-			'nvim-lua/plenary.nvim',
-			'stevearc/dressing.nvim', -- optional for vim.ui.select
-		},
 	}
     use 'simrat39/rust-tools.nvim'
     use 'mfussenegger/nvim-dap'
