@@ -43,4 +43,6 @@ return require('packer').startup(function(use)
 			'stevearc/dressing.nvim', -- optional for vim.ui.select
 		},
 	}
+    use 'simrat39/rust-tools.nvim'
+    use 'mfussenegger/nvim-dap'
 end)
