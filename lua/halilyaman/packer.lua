@@ -46,4 +46,15 @@ return require('packer').startup(function(use)
     use 'simrat39/rust-tools.nvim'
     use 'mfussenegger/nvim-dap'
     use 'numToStr/Comment.nvim'
+    use {
+        'folke/trouble.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' },
+    }
+    use 'nvim-tree/nvim-web-devicons'
+    use {
+        'saecki/crates.nvim',
+        dependencies = { 'nvim-lua/plenary.nvim' },
+    }
+    use 'tpope/vim-fugitive'
+    use 'simrat39/symbols-outline.nvim'
 end)
