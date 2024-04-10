@@ -43,7 +43,6 @@ return require('packer').startup(function(use)
             { 'L3MON4D3/LuaSnip' },
         }
     }
-    use 'simrat39/rust-tools.nvim'
     use 'mfussenegger/nvim-dap'
     use 'numToStr/Comment.nvim'
     use {
